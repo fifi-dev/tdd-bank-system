@@ -1,0 +1,29 @@
+{
+  "name": "bank-system",
+  "version": "1.0.0",
+  "description": "tdd bank system",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fifi-dev/tdd-bank-system.git"
+  },
+  "keywords": [
+    "tdd",
+    "bank"
+  ],
+  "author": "BAZANA NTOMO Fideline, DENKEY DANDJEIN Dona, OUEDRAOGO Bernadette Coralie,",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fifi-dev/tdd-bank-system/issues"
+  },
+  "homepage": "https://github.com/fifi-dev/tdd-bank-system#readme",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.4"
+  }
+}
