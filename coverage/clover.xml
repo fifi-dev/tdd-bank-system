@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670513414600" clover="3.2.0">
-  <project timestamp="1670513414600" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
+<coverage generated="1670514092037" clover="3.2.0">
+  <project timestamp="1670514092037" name="All files">
+    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="6" coveredelements="6" complexity="0" loc="4" ncloc="4" packages="1" files="2" classes="2"/>
     <file name="deposit.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/deposit.ts">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="2" count="2" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+    </file>
+    <file name="withdrawal.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/withdrawal.ts">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
