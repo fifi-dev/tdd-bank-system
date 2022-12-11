@@ -63,6 +63,10 @@ describe('currencies', () => {
     it('should return 1000 * 0.858 if we convert 1000€ to pounds (£)', () => {
         expect(currencies(1000,"£")).toBe(858)
     })
+    //test if we need a condition when amount includes "."
+    it('should return 1000 * 0.858 if we convert 1000€ to pounds (£)', () => {
+        expect(currencies(1.5,"£")).toBe(1.287)
+    })
     it('should return "unknown currency or not supported" if we want to convert in another or unknown currency', () => {
         expect(currencies(500,"Y")).toBe("unknown currency or not supported")
     })
