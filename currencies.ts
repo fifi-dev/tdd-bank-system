@@ -8,5 +8,5 @@ export const currencies = (amount: number, currency: string): number | string =>
     if(currency === "$") return amount * rateUSD
     if(currency === "₦") return amount * rateNGN
     if(currency === "£") return amount * rateGBP
-    return "amount"
+    return "unknown currency or not supported"
 }
