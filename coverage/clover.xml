@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670797787727" clover="3.2.0">
-  <project timestamp="1670797787727" name="All files">
-    <metrics statements="50" coveredstatements="46" conditionals="24" coveredconditionals="22" methods="7" coveredmethods="7" elements="81" coveredelements="75" complexity="0" loc="50" ncloc="50" packages="1" files="6" classes="6"/>
+<coverage generated="1670798079835" clover="3.2.0">
+  <project timestamp="1670798079835" name="All files">
+    <metrics statements="50" coveredstatements="48" conditionals="24" coveredconditionals="24" methods="7" coveredmethods="7" elements="81" coveredelements="79" complexity="0" loc="50" ncloc="50" packages="1" files="6" classes="6"/>
     <file name="account.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/account.ts">
-      <metrics statements="20" coveredstatements="16" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <metrics statements="20" coveredstatements="18" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
@@ -17,13 +17,13 @@
       <line num="17" count="1" type="stmt"/>
       <line num="20" count="0" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
-      <line num="25" count="1" type="stmt"/>
-      <line num="26" count="1" type="stmt"/>
-      <line num="27" count="1" type="cond" truecount="2" falsecount="2"/>
-      <line num="28" count="0" type="stmt"/>
-      <line num="29" count="0" type="stmt"/>
-      <line num="31" count="1" type="stmt"/>
-      <line num="34" count="0" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="27" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
     </file>
     <file name="balance.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/balance.ts">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

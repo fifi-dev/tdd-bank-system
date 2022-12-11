@@ -105,10 +105,14 @@ describe('createAccount', () => {
     })
 })
 
+// deleteAccount functionnality
+describe('deleteAccount', () => {
+    it('should throw error when account of this id and name is not found', () => {
+        expect(deleteAccount(5,'James Doe')).toBe("Oups ! wrong account details")
+    })
 
-// const person: Person = {
-//     id: 1,
-//     name: 'James Doe',
-//     devise: '$',
-// }
-// console.log(person)
+    it('should delete account when account of this id and name is found', () => {
+        expect(deleteAccount(1,'Fifi')).toBe("Account of Fifi deleted")
+    })
+})
+

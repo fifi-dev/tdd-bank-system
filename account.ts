@@ -26,7 +26,8 @@ export const deleteAccount = (id: number, name: string): object | string => {
     for (var i = 0, len = accounts.length; i < len; i++ ) {
         if(accounts[i].id.toString() === accountToDelete.id.toString() && accounts[i].name === accountToDelete.name){
             delete accounts[i]
-            return accounts
+            //return accounts
+            return "Account of " + accountToDelete.name + " deleted"
         }else{
             return "Oups ! wrong account details"
         }
