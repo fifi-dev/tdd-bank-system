@@ -4,6 +4,7 @@ import { loan } from "./loan"
 import { currencies } from "./currencies"
 import { balance } from "./balance"
 import { createAccount } from './account';
+import { deleteAccount } from './deleteAccount';
 
 //deposit functionality
 describe('deposit', () => {
@@ -98,3 +99,10 @@ describe('createAccount', () => {
     })
 })
 
+//delete account functionality
+describe('deleteAccount', () => {
+    it('should return "your account is deleted"', () => {
+        expect(deleteAccount(3,"Coralie")).toBe("your account is deleted")
+    })
+   
+})
