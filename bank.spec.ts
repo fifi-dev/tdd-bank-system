@@ -90,8 +90,11 @@ describe('balance', () => {
 
 //account functionality
 describe('createAccount', () => {
+    // it('should return id, name, currency, balance as an object', () => {
+    //     expect(createAccount(1,'James Doe', '$', 500)).toStrictEqual({id:1, name:'James Doe', devise:'$', balance:500})
+    // })
     it('should return id, name, currency, balance as an object', () => {
-        expect(createAccount(1,'James Doe', '$', 500)).toStrictEqual({id:1, name:'James Doe', devise:'$', balance:500})
+        expect(createAccount(1,'James Doe', '$', 500)).toBe("account with the same id already exists")
     })
 })
 
