@@ -1,6 +1,7 @@
 import { deposit } from "./deposit"
 import { withdrawal } from "./withdrawal"
 import { loan } from "./loan"
+import { currencies } from "./currencies"
 
 //deposit functionality
 describe('deposit', () => {
@@ -49,3 +50,12 @@ describe('loan', () => {
         expect(loan(100,250.5)).toBe("YAS Congrats, your new balance is 350.5 ! You must return: 375.75")
     })
 })
+
+//currencies converter
+describe('currencies', () => {
+    it('should return money to refund if balance or amount include .', () => {
+        // we consider that's we're located in France
+        expect(currencies(100,"$")).toBe("")
+    })
+})
+
