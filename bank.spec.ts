@@ -3,7 +3,7 @@ import { withdrawal } from "./withdrawal"
 import { loan } from "./loan"
 import { currencies } from "./currencies"
 import { balance } from "./balance"
-import { createAccount } from './account';
+import { createAccount, deleteAccount } from './account';
 
 //deposit functionality
 describe('deposit', () => {
@@ -93,10 +93,18 @@ describe('createAccount', () => {
     // it('should return id, name, currency, balance as an object', () => {
     //     expect(createAccount(1,'James Doe', '$', 500)).toStrictEqual({id:1, name:'James Doe', devise:'$', balance:500})
     // })
-    it('should return id, name, currency, balance as an object', () => {
-        expect(createAccount(1,'James Doe', '$', 500)).toBe("account with the same id already exists")
+    it('should not create an account if id or name already used', () => {
+        expect(createAccount(1,'James Doe', '$', 500)).toBe("Oups! Id already used or account already created")
+    })
+
+    it('should not create an account if id or name already used', () => {
+        expect(createAccount(4,'Fifi', '$', 500)).toBe("Oups! Id already used or account already created")
+    })
+    it('should create account if not already created', () => {
+        expect(createAccount(5,'Lucie Wen', '$', 1200)).toBe("congrats ! your account is created")
     })
 })
+
 
 // const person: Person = {
 //     id: 1,

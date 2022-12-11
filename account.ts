@@ -1,55 +1,35 @@
-// // 👇️ named export
-// export class User {
-//     public name : string;
-//     public constructor(theName: string){
-//     this.name = theName;
-//     }
-
-//     // increaseSalary() {
-//     //     this.salary += 100;
-//     // }
-// }
-
-// 👇️ named export
-// export interface Person {
-//     id: number;
-//     name: string;
-//     devise: string;
-//   }
-
+type Account = {id: number, name: string, currency: string, balance: number};
+    let accounts: Account[] = [];
+    accounts.push({id:1, name:'Fifi', currency:'€', balance:100000});
+    accounts.push({id:2, name:'Coralie', currency:'$', balance:100000});
+    accounts.push({id:3, name:'Dona', currency:'£', balance:100000});
 
 export const createAccount = (id: number, name: string, currency: string, balance: number): object | string => {
-    
-    let accounts = [
-        {id:1, name:'James Doe', devise:'$', balance:500},
-        {id:2, name:'Fifi', currency:'€', balance:100000},
-        {id:3, name:'Coralie', currency:'$', balance:100000},
-        {id:4, name:'Dona', currency:'£', balance:100000},
-    
-    ]
+
     let newAccount = {id:id, name:name, currency:currency, balance:balance}
 
-    // for(const account in accounts){
-    //     let res = "";
-    //     if(JSON.parse(account).id == newAccount.id){
-    //         res = "account with the same id already exists"
-    //     }else{
-    //         accounts.push(newAccount)
-    //         res = "account created"
-    //     } return res
-    // }
-
-    for(let account in accounts){
-        let res = ""
-        if(account.match(newAccount.name)){
-            res = "account with the same id already exists"
-            return res
+    
+    for (var i = 0, len = accounts.length; i < len; i++ ) {
+        if(accounts[i].id.toString() === newAccount.id.toString() || accounts[i].name === newAccount.name){
+            return "Oups! Id already used or account already created"
         }else{
             accounts.push(newAccount)
-            res = "account created"
-            return accounts
-        } 
+            return "congrats ! your account is created"
+        }
     }
-
     return newAccount
+}
+
+export const deleteAccount = (id: number, name: string): object | string => {
+
+    let accountToDelete = {id:id, name:name}
+    for (var i = 0, len = accounts.length; i < len; i++ ) {
+        if(accounts[i].id.toString() === accountToDelete.id.toString() && accounts[i].name === accountToDelete.name){
+            delete accounts[i]
+            return accounts
+        }else{
+            return "Oups ! wrong account details"
+        }
+    }
+    return accountToDelete
 }
