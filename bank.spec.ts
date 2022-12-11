@@ -6,13 +6,13 @@ import { balance } from "./balance"
 
 //deposit functionality
 describe('deposit', () => {
-    it('should return solde + montant when a deposite is made ', () => {
+    it('should return balance + amount when a deposite is made ', () => {
         expect(deposit(0,200)).toBe(200)
     })
-    it('should return solde + montant when a deposite is made ', () => {
+    it('should return balance + amount when a deposite is made ', () => {
         expect(deposit(200,50)).toBe(250)
     })
-    it('should return 250.5 when a deposite is made with solde or montant include .', () => {
+    it('should return 250.5 when a deposite is made with balance or amount include .', () => {
         expect(deposit(100.2,150.3)).toBe(250.5)
     })
 
@@ -20,23 +20,23 @@ describe('deposit', () => {
 
 //withdrawal functionality
 describe('withdrawal', () => {
-    it('should return solde - montant when a withdrawal is made ', () => {
+    it('should return balance - amount when a withdrawal is made ', () => {
         expect(withdrawal(250,100)).toBe(150)
     })
-    it('should return solde - montant when a withdrawal is made ', () => {
+    it('should return balance - amount when a withdrawal is made ', () => {
         expect(withdrawal(150,150)).toBe(0)
     })
-    // it('should return 0 when solde = 0', () => {
+    // it('should return 0 when balance = 0', () => {
     //     expect(withdrawal(0,500)).toBe(0)
     // })
     
-    it('should return "your balance is insufficient" when solde = 0', () => {
+    it('should return "your balance is insufficient" when balance = 0', () => {
         expect(withdrawal(0,500)).toBe("Your balance is insufficient")
     })
-    it('should return "Cannot withdraw" when solde - montant < 0', () => {
+    it('should return "Cannot withdraw" when balance - amount < 0', () => {
         expect(withdrawal(50,100)).toBe("Can't withdraw")
     })
-    it('should return 250.5 if solde or montant include .', () => {
+    it('should return 250.5 if balance or amount include .', () => {
         expect(withdrawal(300.5,50)).toBe(250.5)
     })
 })

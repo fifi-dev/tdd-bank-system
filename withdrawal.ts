@@ -1,19 +1,19 @@
-export const withdrawal = (solde: number, montant: number): number | string => {
+export const withdrawal = (balance: number, amount: number): number | string => {
 
-    if(solde === 0) return "Your balance is insufficient";
-    if(solde - montant < 0) return "Can't withdraw";
-    if(solde.toString().includes(".") || montant.toString().includes(".")) {
-        let result = solde  - montant;
+    if(balance === 0) return "Your balance is insufficient";
+    if(balance - amount < 0) return "Can't withdraw";
+    if(balance.toString().includes(".") || amount.toString().includes(".")) {
+        let result = balance  - amount;
 
         return result;
 
     }
-    // if(solde === 0){
+    // if(balance === 0){
     //     // let msg = 'error = insufficient balance' 
     //     // console.log(msg)
 
-    //     return solde
+    //     return balance
     // }
     //return 150;
-    return solde - montant;
+    return balance - amount;
 }

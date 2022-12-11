@@ -1,11 +1,11 @@
-export const deposit = (solde: number, montant: number): number => {
+export const deposit = (balance: number, amount: number): number => {
     //return 200
-    if(solde.toString().includes(".") || montant.toString().includes(".")) {
-        let result = solde + montant;
+    if(balance.toString().includes(".") || amount.toString().includes(".")) {
+        let result = balance + amount;
 
         return result;
 
     }
 
-    return solde + montant;
+    return balance + amount;
 }
