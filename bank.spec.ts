@@ -1,7 +1,8 @@
 import { deposit } from "./deposit"
 import { withdrawal } from "./withdrawal"
+import { loan } from "./loan"
 
-//depot functionality
+//deposit functionality
 describe('deposit', () => {
     it('should return solde + montant when a deposite is made ', () => {
         expect(deposit(0,200)).toBe(200)
@@ -15,6 +16,7 @@ describe('deposit', () => {
 
 })
 
+//withdrawal functionality
 describe('withdrawal', () => {
     it('should return solde - montant when a withdrawal is made ', () => {
         expect(withdrawal(250,100)).toBe(150)
@@ -34,5 +36,12 @@ describe('withdrawal', () => {
     })
     it('should return 250.5 if solde or montant include .', () => {
         expect(withdrawal(300.5,50)).toBe(250.5)
+    })
+})
+
+//loan functionality
+describe('loan', () => {
+    it('should return money to refund', () => {
+        expect(loan(100,200)).toBe(300)
     })
 })
