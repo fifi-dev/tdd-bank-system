@@ -64,7 +64,7 @@ describe('currencies', () => {
         expect(currencies(1000,"£")).toBe(858)
     })
     //test if we need a condition when amount includes "."
-    it('should return 1000 * 0.858 if we convert 1000€ to pounds (£)', () => {
+    it('should return 1.5 * 0.858 if we convert 1.5€ to pounds (£)', () => {
         expect(currencies(1.5,"£")).toBe(1.287)
     })
     it('should return "unknown currency or not supported" if we want to convert in another or unknown currency', () => {
@@ -72,6 +72,9 @@ describe('currencies', () => {
     })
     it('should return "Impossible" if money to convert = 0', () => {
         expect(currencies(0,"$")).toBe("Impossible")
+    })
+    it('should return  "Cannot convert negative value" when a negative amount is given', () => {
+        expect(currencies(-400,"$")).toBe("Can't convert negative value")
     })
 })
 

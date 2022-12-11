@@ -1,5 +1,6 @@
 export const currencies = (amount: number, currency: string): number | string =>{
     if(amount === 0) return "Impossible"
+    if(amount.toString().includes("-")) return "Can't convert negative value"
     // dollars's rate
     let rateUSD = 1.053
     // naira's rate
