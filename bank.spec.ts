@@ -2,6 +2,7 @@ import { deposit } from "./deposit"
 import { withdrawal } from "./withdrawal"
 import { loan } from "./loan"
 import { currencies } from "./currencies"
+import { balance } from "./balance"
 
 //deposit functionality
 describe('deposit', () => {
@@ -78,3 +79,10 @@ describe('currencies', () => {
     })
 })
 
+
+//see balance functionality
+describe('balance', () => {
+    it('should return balance if we ask for it', () => {
+        expect(balance(200)).toBe(200)
+    })
+})
