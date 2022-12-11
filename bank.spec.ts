@@ -66,5 +66,8 @@ describe('currencies', () => {
     it('should return "unknown currency or not supported" if we want to convert in another or unknown currency', () => {
         expect(currencies(500,"Y")).toBe("unknown currency or not supported")
     })
+    it('should return "Impossible" if money to convert = 0', () => {
+        expect(currencies(0,"$")).toBe("Impossible")
+    })
 })
 

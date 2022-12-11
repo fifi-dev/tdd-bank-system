@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670764941256" clover="3.2.0">
-  <project timestamp="1670764941257" name="All files">
-    <metrics statements="26" coveredstatements="26" conditionals="14" coveredconditionals="14" methods="4" coveredmethods="4" elements="44" coveredelements="44" complexity="0" loc="26" ncloc="26" packages="1" files="4" classes="4"/>
+<coverage generated="1670765394320" clover="3.2.0">
+  <project timestamp="1670765394320" name="All files">
+    <metrics statements="27" coveredstatements="27" conditionals="15" coveredconditionals="15" methods="4" coveredmethods="4" elements="46" coveredelements="46" complexity="0" loc="27" ncloc="27" packages="1" files="4" classes="4"/>
     <file name="currencies.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/currencies.ts">
-      <metrics statements="8" coveredstatements="8" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="3" count="4" type="stmt"/>
-      <line num="5" count="4" type="stmt"/>
-      <line num="7" count="4" type="stmt"/>
-      <line num="8" count="4" type="cond" truecount="1" falsecount="0"/>
-      <line num="9" count="3" type="cond" truecount="1" falsecount="0"/>
-      <line num="10" count="2" type="cond" truecount="1" falsecount="0"/>
-      <line num="11" count="1" type="stmt"/>
+      <line num="2" count="5" type="cond" truecount="1" falsecount="0"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="8" count="4" type="stmt"/>
+      <line num="9" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="11" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="12" count="1" type="stmt"/>
     </file>
     <file name="deposit.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/deposit.ts">
       <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>

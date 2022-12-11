@@ -1,4 +1,5 @@
 export const currencies = (amount: number, currency: string): number | string =>{
+    if(amount === 0) return "Impossible"
     // dollars's rate
     let rateUSD = 1.053
     // naira's rate
