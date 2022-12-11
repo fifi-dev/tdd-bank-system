@@ -28,7 +28,7 @@ describe('withdrawal', () => {
     it('should return "Cannot withdraw" when solde - montant < 0', () => {
         expect(withdrawal(50,100)).toBe("Can't withdraw")
     })
-    // it('should return 250.5 wh', () => {
-    //     expect(withdrawal(300.5,50)).toBe(250.5)
-    // })
+    it('should return 250.5 if solde or montant include .', () => {
+        expect(withdrawal(300.5,50)).toBe(250.5)
+    })
 })
