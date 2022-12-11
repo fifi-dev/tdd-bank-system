@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670514092037" clover="3.2.0">
-  <project timestamp="1670514092037" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="6" coveredelements="6" complexity="0" loc="4" ncloc="4" packages="1" files="2" classes="2"/>
-    <file name="deposit.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/deposit.ts">
+<coverage generated="1670758478358" clover="3.2.0">
+  <project timestamp="1670758478359" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="10" coveredelements="10" complexity="0" loc="6" ncloc="6" packages="1" files="2" classes="2"/>
+    <file name="deposit.ts" path="C:\laragon\www\tdd-bank-system\deposit.ts">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="2" type="stmt"/>
     </file>
-    <file name="withdrawal.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/withdrawal.ts">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+    <file name="withdrawal.ts" path="C:\laragon\www\tdd-bank-system\withdrawal.ts">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
+      <line num="3" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="4" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="12" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
