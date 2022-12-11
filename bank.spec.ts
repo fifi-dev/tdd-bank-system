@@ -42,6 +42,6 @@ describe('withdrawal', () => {
 //loan functionality
 describe('loan', () => {
     it('should return money to refund', () => {
-        expect(loan(100,200)).toBe(300)
+        expect(loan(100,200)).toBe("Congrats, your new balance is 300 ! You must return: 300")
     })
 })
