@@ -44,4 +44,8 @@ describe('loan', () => {
     it('should return money to refund', () => {
         expect(loan(100,200)).toBe("Congrats, your new balance is 300 ! You must return: 300")
     })
+    
+    it('should return money to refund if balance or amount include .', () => {
+        expect(loan(100,250.5)).toBe("YAS Congrats, your new balance is 350.5 ! You must return: 375.75")
+    })
 })
