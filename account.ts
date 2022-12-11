@@ -34,3 +34,19 @@ export const deleteAccount = (id: number, name: string): object | string => {
     }
     return accountToDelete
 }
+/*
+export const editAccount = (id: number, name: string, newName: string): object | string => {
+
+    let accountToEdit = {id:id, name: name}
+    for (var i = 0, len = accounts.length; i < len; i++ ) {
+        if(accounts[i].id.toString() === accountToEdit.id.toString() && accounts[i].name === accountToEdit.name){
+            accounts[i].name = newName
+            //return accounts
+            return "The name of " + accountToEdit.name + " has been replace by " + newName
+        }else{
+            return "Oups ! wrong account details"
+        }
+    }
+    return accountToEdit
+}
+*/

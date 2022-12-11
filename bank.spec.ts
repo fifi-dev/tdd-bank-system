@@ -3,7 +3,7 @@ import { withdrawal } from "./withdrawal"
 import { loan } from "./loan"
 import { currencies } from "./currencies"
 import { balance } from "./balance"
-import { createAccount, deleteAccount } from './account';
+import { createAccount, deleteAccount, /*editAccount*/ } from './account';
 
 //deposit functionality
 describe('deposit', () => {
@@ -116,3 +116,14 @@ describe('deleteAccount', () => {
     })
 })
 
+// editAccount functionnality
+/*
+describe('editAccount', () => {
+    it('should throw error when account of this id and name is not found', () => {
+        expect(editAccount(4,'Coralie', 'Coralie Smith')).toBe("Oups ! wrong account details")
+    })
+
+    it('should update account name when account of this id and name is found', () => {
+        expect(editAccount(2,'Coralie', 'Coralie Smith')).toBe("The name of Coralie has been replace by Coralie Smith")
+})
+})*/
