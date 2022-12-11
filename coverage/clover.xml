@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670759352793" clover="3.2.0">
-  <project timestamp="1670759352793" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2" elements="16" coveredelements="16" complexity="0" loc="9" ncloc="9" packages="1" files="2" classes="2"/>
+<coverage generated="1670759716206" clover="3.2.0">
+  <project timestamp="1670759716207" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2" elements="22" coveredelements="22" complexity="0" loc="12" ncloc="12" packages="1" files="2" classes="2"/>
     <file name="deposit.ts" path="C:\laragon\www\tdd-bank-system\deposit.ts">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
+      <line num="3" count="3" type="cond" truecount="3" falsecount="0"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
     </file>
     <file name="withdrawal.ts" path="C:\laragon\www\tdd-bank-system\withdrawal.ts">
       <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>

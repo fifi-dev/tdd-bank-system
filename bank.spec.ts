@@ -9,6 +9,10 @@ describe('deposit', () => {
     it('should return solde + montant when a deposite is made ', () => {
         expect(deposit(200,50)).toBe(250)
     })
+    it('should return 250.5 when a deposite is made with solde or montant include .', () => {
+        expect(deposit(100.2,150.3)).toBe(250.5)
+    })
+
 })
 
 describe('withdrawal', () => {
