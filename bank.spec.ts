@@ -53,9 +53,15 @@ describe('loan', () => {
 
 //currencies converter
 describe('currencies', () => {
-    it('should return money to refund if balance or amount include .', () => {
+    it('should return 600 * 1.053 if we convert 600€ to dollars ($)', () => {
         // we consider that's we're located in France
-        expect(currencies(100,"$")).toBe("")
+        expect(currencies(600,"$")).toBe(631.8)
+    })
+    it('should return 250 * 468.062 if we convert 250€ to Nigerian Naira (₦)', () => {
+        expect(currencies(250,"₦")).toBe(117015.5)
+    })
+    it('should return 1000 * 0.858 if we convert 1000€ to pounds (£)', () => {
+        expect(currencies(1000,"£")).toBe(858)
     })
 })
 

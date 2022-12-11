@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670762576323" clover="3.2.0">
-  <project timestamp="1670762576323" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="11" coveredconditionals="11" methods="3" coveredmethods="3" elements="32" coveredelements="32" complexity="0" loc="18" ncloc="18" packages="1" files="3" classes="3"/>
-    <file name="deposit.ts" path="C:\Users\Dona\OneDrive - De Vinci\iim\A4\s3 - tdd\tdd-bank-system\deposit.ts">
+<coverage generated="1670764705369" clover="3.2.0">
+  <project timestamp="1670764705369" name="All files">
+    <metrics statements="26" coveredstatements="25" conditionals="14" coveredconditionals="14" methods="4" coveredmethods="4" elements="44" coveredelements="43" complexity="0" loc="26" ncloc="26" packages="1" files="4" classes="4"/>
+    <file name="currencies.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/currencies.ts">
+      <metrics statements="8" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="8" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="11" count="0" type="stmt"/>
+    </file>
+    <file name="deposit.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/deposit.ts">
       <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="3" type="cond" truecount="3" falsecount="0"/>
@@ -10,16 +21,16 @@
       <line num="6" count="1" type="stmt"/>
       <line num="10" count="2" type="stmt"/>
     </file>
-    <file name="loan.ts" path="C:\Users\Dona\OneDrive - De Vinci\iim\A4\s3 - tdd\tdd-bank-system\loan.ts">
+    <file name="loan.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/loan.ts">
       <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="2" type="stmt"/>
       <line num="4" count="2" type="stmt"/>
       <line num="7" count="2" type="cond" truecount="3" falsecount="0"/>
       <line num="9" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
     </file>
-    <file name="withdrawal.ts" path="C:\Users\Dona\OneDrive - De Vinci\iim\A4\s3 - tdd\tdd-bank-system\withdrawal.ts">
+    <file name="withdrawal.ts" path="/Users/fidelinebazana/Developer/cours/2022/Tests Unitaires/rendu/withdrawal.ts">
       <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="5" type="cond" truecount="1" falsecount="0"/>
