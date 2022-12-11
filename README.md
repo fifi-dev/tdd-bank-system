@@ -17,7 +17,7 @@ TDD of a bank system.
 - [x] create account
 - [ ] transfert
 - [ ] transaction history
-- [ ] close an account
+- [x] close an account
 - [ ] Manage multiple banks
 - [ ] edit account
 - [ ] Manage beneficiariests
