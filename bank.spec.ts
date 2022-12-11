@@ -90,21 +90,11 @@ describe('balance', () => {
 
 //account functionality
 describe('createAccount', () => {
-    // it('should return id, name, currency, balance as an object', () => {
-    //     expect(createAccount(1,'James Doe', '$', 500)).toStrictEqual({id:1, name:'James Doe', devise:'$', balance:500})
-    // })
     it('should return "account with the same name or id already exists"', () => {
         expect(createAccount(3,"Coralie", '$', 500)).toBe("account with the same name or id already exists")
     })
     it('should return "account created"', () => {
         expect(createAccount(5,"Joliane", '$', 500)).toBe("account created")
     })
-
 })
 
-// const person: Person = {
-//     id: 1,
-//     name: 'James Doe',
-//     devise: '$',
-// }
-// console.log(person)
