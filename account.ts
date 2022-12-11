@@ -14,14 +14,14 @@
 // export interface Person {
 //     id: number;
 //     name: string;
-//     devise: string;
+//     currency: string;
 //   }
 
 
-export const createAccount = (id: number, name: string, currency: string, balance: number): object | string => {
+export const createAccount = (id: number, name: string, currency: string, balance: number) => {
     
     let accounts = [
-        {id:1, name:'James Doe', devise:'$', balance:500},
+        {id:1, name:'James Doe', currency:'$', balance:500},
         {id:2, name:'Fifi', currency:'€', balance:100000},
         {id:3, name:'Coralie', currency:'$', balance:100000},
         {id:4, name:'Dona', currency:'£', balance:100000},
@@ -39,17 +39,41 @@ export const createAccount = (id: number, name: string, currency: string, balanc
     //     } return res
     // }
 
-    for(let account in accounts){
+    // type Account = {id: number, name: string, currency: string, balance: number};
+    // let account: Account[] = [];
+    // account.push({id:1, name:'James Doe', currency:'$', balance:500});
+  
+    // let duplicates = this.findElements<Person, number>(people, 'age', 44);
+
+
+    // for(let account in accounts){
+      
+    //     let res = ""
+    //     if(account.match(newAccount.name)){
+    //         res = "account with the same id already exists"
+    //         return res
+    //     }else{
+    //         accounts.push(newAccount)
+    //         res = "account created"
+    //         return newAccount.name
+    //     } 
+    // }
+
+
+   
         let res = ""
-        if(account.match(newAccount.name)){
-            res = "account with the same id already exists"
+        let accountName = accounts.find(({ name }) => name === newAccount.name);
+        let accountId = accounts.find(({ id }) => id === newAccount.id);
+        if(accountName || accountId){
+            res = "account with the same name or id already exists"
             return res
-        }else{
+        }
+       
+        
+        if(!accountId ){
             accounts.push(newAccount)
             res = "account created"
-            return accounts
+            return res
         } 
-    }
-
-    return newAccount
+    
 }
